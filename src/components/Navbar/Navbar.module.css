@@ -1,0 +1,80 @@
+.neko__nav{
+
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+    /*height: 3rem;*/
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    padding: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .neko__nav{
+      background: none;
+    }
+  }
+  
+  .neko__nav.logo {
+    position: relative;
+    width: 300px;
+  }
+  
+  .neko__nav.logo img {
+    position: absolute;
+    top: -1.25rem;
+    width: 100%;
+  }
+  
+  .neko__nava.nav-link {
+    color: #fff;
+    font-weight: 900;
+    font-size: 1rem;
+    line-height: 100%;
+    padding: 0.5rem 0.25rem;
+    display: inline-block;
+    position: relative;
+  }
+  
+  
+  
+  .neko__nava.nav-link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+  .neko__nava.nav-link:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  
+  
+  .neko__nav.whitepaper {
+    color: #fff;
+    background: #f46b19;
+    border: 2px solid #f46b19;
+    margin-left: 1rem;
+    font-weight: 900;
+    font-size: 1rem;
+    padding: 0px 0.4rem;
+    border-radius: 0.33rem;
+  }
+  
+  .neko__nav.whitepaper:hover {
+    border: 2px solid #f46b19;
+    background-color: transparent;
+    color: #f46b19;
+  }
+  
+  .neko__nav.whitepaper:hover, .neko__nav.whitepaper:focus, .neko__nav.whitepaper:active {
+    outline: none;
+  }
+  
