@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import MainSection from '../src/components/MainSection/MainSection'
 import Navbar from '../src/components/Navbar/TopHeader'
 import TopHeader from '../src/components/TopHeader/TopHeader'
 
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
          <Navbar></Navbar>
         <TopHeader></TopHeader>
+       <MainSection></MainSection>
     </div>
   )
 }

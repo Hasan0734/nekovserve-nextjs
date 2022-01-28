@@ -8,19 +8,13 @@ const TopHeader = () => {
         <>
             <section className="mb-5 overflow-hidden top-section">
                 <div className="">
-
+                
                     <div className="wrapper d-flex justify-content-center position-relative">
-                        <div className="container pt-5 pt-sm-0" style={{ position: 'absolute' }}>
+                        <div className="container pt-5 pt-sm-0" style={{position: 'absolute'}}>
                         </div>
-                        <div  className="circle-spin ">
-                            <Image src={BigCircle} />
-                        </div>
-                        <div className="circle-spin-r ">
-                            <Image  src={smCircle} />
-                        </div>
-                        <div  className="img-main ">
-                            <Image src={Main} />
-                        </div>
+                        <Image className="circle-spin" src={BigCircle} />
+                        <Image className="circle-spin-r" src={smCircle} />
+                        <Image className="img-main" src={Main} />
                     </div>
                 </div>
             </section>
