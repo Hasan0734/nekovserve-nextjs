@@ -85,21 +85,21 @@ const Navbar = () => {
                                 </div>
                                 <div className="social-contacts border-0">
                                     <a href="">
-                                        <Image className="me-2"
-                                            src={Twitter}
-                                            style="height:30px" />
+                                        <img className="me-2"
+                                            src="/public/images/icon/twitter--v1.png"
+                                            style={{height:'30px'}} />
 
                                     </a>
                                     <a href="">
-                                        <Image className="me-2"
-                                            src={Discord}
-                                            style="height:30px" />
+                                        <img className="me-2"
+                                            src="/public/images/icon/discord-logo.png"
+                                            style={{height:'30px'}} />
 
                                     </a>
                                     <a href="">
-                                        <Image className="me-2"
-                                            src={Instagram}
-                                            style="height:30px" />
+                                        <img className="me-2"
+                                            src="/public/images/icon/instagram-new.png"
+                                            style={{height:'30px'}} />
                                     </a>
                                 </div>
 
