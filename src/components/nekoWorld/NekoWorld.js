@@ -3,7 +3,7 @@ import Planet from '../../assets/image/planet.webp'
 const NekoWorld = () => {
     return (
         <>
-            <section id="about-neko-world">
+            <section className="about-neko-world">
                 <div className="container pt-5">
                     <div className="row mt-5">
                         <div className="col-12 col-md-6">

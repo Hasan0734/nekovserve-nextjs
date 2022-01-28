@@ -3,7 +3,7 @@ import React from 'react';
 const NekoProfession = () => {
     return (
         <>
-            <section className='profession-farmer'>
+            <section className="profession-farmer">
                 <div className="overflow-hidden">
                     <div className="d-flex justify-content-center mb-5">
                         <div className="section-title">
