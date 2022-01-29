@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Planet from '../../assets/image/planet.webp'
 const NekoWorld = () => {
     return (
         <>

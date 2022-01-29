@@ -1,9 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
-import Logo from '../../assets/image/logo.webp'
-import Twitter from '../../assets/image/icon/twitter--v1.png'
-import Discord from '../../assets/image/icon/discord-logo.png'
-import Instagram from '../../assets/image/icon/instagram-new.png'
+
 const Navbar = () => {
     const [toggle, setToggle] = useState(false)
     return (
@@ -41,7 +38,7 @@ const Navbar = () => {
                 <div className="container">
                     <div className="d-flex justify-content-between">
                         <div className="logo">
-                            <Image src={Logo} alt="" loading="lazy" />
+                            <img src='/images/logo.webp' alt="" loading="lazy" />
                         </div>
                         <div className="menu">
                             <div onClick={() => setToggle(true)} className="icon"></div>

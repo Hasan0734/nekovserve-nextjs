@@ -1,9 +1,28 @@
 
+import { useState, useEffect } from 'react';
 
 const NekoBreeding = () => {
+    const [image, setImage] = useState(1)
+    const [count, setCount] = useState(0)
+
+    let  index = 1
+    useEffect(() => {
+
+       
+        setInterval(() => {
+            if (index === 7) {
+               index = 1
+            }
+            setImage(index)
+            index++
+    
+        }, 500);
+    },index);
+
+
     return (
         <>
-            <section id="neko-mutation">
+            <section className="neko-mutation">
                 <div className="container">
                     <div className="row  px-3">
                         <div className="col-12 text-center text-white my-5">
@@ -21,7 +40,7 @@ const NekoBreeding = () => {
                         </div>
                         <div className="position-relative w-100" style={{ paddingLeft: '10%', paddingRight: '10%' }}>
                             <img src="https://nekoverse.net/resources/home/images/incubator.webp" className="w-100" />
-                            <img id="neko-variation" className="position-absolute  neko-card-floating" src="https://d1j8r0kxyu9tj8.cloudfront.net/neko/neko-variants/6.png" style={{ width: '45%', margin: 'auto', top: '25%', left: 0, right: 0, bottom: 0 }} />
+                            <img id="neko-variation" className="position-absolute  neko-card-floating" src={`/images/neko-variants/${image}.png`} style={{ width: '45%', margin: 'auto', top: '25%', left: 0, right: 0, bottom: 0 }} />
                         </div>
                     </div>
                 </div>
