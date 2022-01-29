@@ -1176,7 +1176,24 @@ a {
   }
 }
 
+.timelines {
+  border-bottom: solid white 1px;
+  width: 100%;
+  opacity: .2;
+  line-height: 0;
+  height: 4px;
+}
 
+.timelines.active {
+  opacity: 1;
+}
+
+.timelines::before {
+  content: '●';
+  font-size: 50px;
+  line-height: 0;
+  margin-left: -4px;
+}
 .roadmap .nav-link {
   background: transparent;
   color: white;
